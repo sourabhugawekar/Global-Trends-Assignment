@@ -23,7 +23,6 @@ const openWeatherApiController = {
 
         const { data } = response;
 
-        // 3️⃣ Store in cache
         cache.set(cacheKey, data);
 
         res.status(200).json({
